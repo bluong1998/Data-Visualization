@@ -128,9 +128,9 @@ class PlanetsBargraph {
       .join('rect')
         .attr('class', 'bar')
         .attr('x', d => vis.xScale(vis.xValue(d)))
+        .attr('y', d => vis.yScale(vis.yValue(d)))
         .attr('width', vis.xScale.bandwidth())
         .attr('height', d => vis.height - vis.yScale(vis.yValue(d)))
-        .attr('y', d => vis.yScale(vis.yValue(d)))
         .attr('fill', d => vis.colorScale(vis.colorValue(d)));
 
     // Update axes
