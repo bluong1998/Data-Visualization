@@ -69,15 +69,15 @@ class RadMassScatterplot {
       vis.chart.append('text')
           .attr('class', 'axis-title')
           .attr('y', vis.height + 20)
-          .attr('x', vis.width + -200)
+          .attr('x', vis.width + -260)
           .attr('dy', '.71em')
           .style('text-anchor', 'end')
           .text('Radius');
   
       vis.svg.append('text')
           .attr('class', 'axis-title')
-          .attr('x', -210)
-          .attr('y', 10)
+          .attr('x', -150)
+          .attr('y', 7)
           .attr('dy', '.71em')
           .attr("dx", "-.8em")
           .attr("transform", "rotate(-90)")
